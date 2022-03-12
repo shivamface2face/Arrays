@@ -11,20 +11,21 @@ public class Insert {
 
     }
 
-   static void InsertT(int[] arr, int index,int x) {
+   static void InsertT(int[] newArr, int index,int x) {
+
         int i;
-        if (index>=0 && index<= arr.length){
-            for ( i= arr.length-1;i>index;i--){
-                arr[i]=arr[i-1];
+        if (index>=0 && index<= newArr.length){
+            for ( i= newArr.length-1;i>index;i--){
+                newArr[i]=newArr[i-1];
             }
-            arr[index]=x;
+            newArr[index]=x;
 
         }
 
 
 
-       for (int j = 0; j < arr.length; j++) {
-           System.out.println(arr[j]);
+       for (int j = 0; j < newArr.length; j++) {
+           System.out.println(newArr[j]);
        }
     }
 }
