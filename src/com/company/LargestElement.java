@@ -9,16 +9,16 @@ public class LargestElement {
         System.out.println(ans);
     }
 
-      static int get(int[] arr) {
+    static int get(int[] arr) {
         int res=0;
-          for (int i = 0; i <arr.length ; i++) {
-              if (arr[i]>arr[res]){
-                  res=i;
-              }
-
-          }
-          return res;
+        for (int i = 0; i <arr.length ; i++) {
+            if (arr[i]>arr[res]){
+                res=i;
+            }
+        }
+        return res;
     }
+
 
     static int getLargest(int[] arr) {
 
